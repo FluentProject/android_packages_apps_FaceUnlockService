@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -rl "org\.pixelexperience" app/. | xargs sed -i 's/org\.pixelexperience/com\.crdroid/g'
+grep -rl "org\.crdroid" app/. | xargs sed -i 's/org\.crdroid/com\.fluentproject/g'
