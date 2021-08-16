@@ -23,22 +23,22 @@ android_app {
         "faceunlock_vendor_framework",
     ],
     required: [
-        "privapp-permissions-com.crdroid.faceunlock",
-        "hiddenapi-whitelist-com.crdroid.faceunlock",
+        "privapp-permissions-com.fluentproject.faceunlock",
+        "hiddenapi-whitelist-com.fluentproject.faceunlock",
         "faceunlock_dependencies",
     ],
 }
 
 prebuilt_etc {
-    name: "privapp-permissions-com.crdroid.faceunlock",
-    src: "privapp-permissions-com.crdroid.faceunlock.xml",
+    name: "privapp-permissions-com.fluentproject.faceunlock",
+    src: "privapp-permissions-com.fluentproject.faceunlock.xml",
     sub_dir: "permissions",
     filename_from_src: true,
 }
 
 prebuilt_etc {
-    name: "hiddenapi-whitelist-com.crdroid.faceunlock",
-    src: "hiddenapi-whitelist-com.crdroid.faceunlock.xml",
+    name: "hiddenapi-whitelist-com.fluentproject.faceunlock",
+    src: "hiddenapi-whitelist-com.fluentproject.faceunlock.xml",
     sub_dir: "sysconfig",
     filename_from_src: true,
 }

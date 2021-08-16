@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.crdroid.faceunlock">
+    package="com.fluentproject.faceunlock">
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"
@@ -11,7 +11,7 @@
     <uses-permission android:name="android.permission.USE_BIOMETRIC_INTERNAL" />
 
     <application
-        android:name="com.crdroid.faceunlock.FaceApplication"
+        android:name="com.fluentproject.faceunlock.FaceApplication"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher_face_unlock"
         android:label="@string/app_name"
@@ -21,7 +21,7 @@
         android:persistent="true"
         android:allowClearUserData="false">
         <activity
-            android:name="com.crdroid.faceunlock.SetupFaceIntroActivity"
+            android:name="com.fluentproject.faceunlock.SetupFaceIntroActivity"
             android:enabled="true"
             android:excludeFromRecents="true"
             android:exported="true"
@@ -29,44 +29,44 @@
             android:screenOrientation="portrait"
             android:theme="@style/SettingsTheme" />
         <activity
-            android:name="com.crdroid.faceunlock.FaceEnrollActivity"
+            android:name="com.fluentproject.faceunlock.FaceEnrollActivity"
             android:excludeFromRecents="true"
             android:launchMode="standard"
             android:screenOrientation="portrait"
             android:theme="@style/SettingsTheme" />
         <activity
-            android:name="com.crdroid.faceunlock.FaceFinish"
+            android:name="com.fluentproject.faceunlock.FaceFinish"
             android:excludeFromRecents="true"
             android:label="@string/facelock_setup_notification_text"
             android:launchMode="standard"
             android:screenOrientation="portrait"
             android:theme="@style/SettingsTheme" />
         <activity
-            android:name="com.crdroid.faceunlock.FaceTryAgain"
+            android:name="com.fluentproject.faceunlock.FaceTryAgain"
             android:excludeFromRecents="true"
             android:launchMode="standard"
             android:screenOrientation="portrait"
             android:theme="@style/SettingsTheme" />
         <activity
-            android:name="com.crdroid.faceunlock.FaceValuePropActivity"
+            android:name="com.fluentproject.faceunlock.FaceValuePropActivity"
             android:excludeFromRecents="true"
             android:launchMode="standard"
             android:screenOrientation="portrait"
             android:theme="@style/SettingsTheme" />
         <activity
-            android:name="com.crdroid.faceunlock.FaceUpgradeFinish"
+            android:name="com.fluentproject.faceunlock.FaceUpgradeFinish"
             android:excludeFromRecents="true"
             android:launchMode="standard"
             android:screenOrientation="portrait"
             android:theme="@style/SettingsTheme" />
 
         <service
-            android:name="com.crdroid.faceunlock.service.FaceAuthService"
+            android:name="com.fluentproject.faceunlock.service.FaceAuthService"
             android:exported="true"
             android:label="@string/app_name"
             android:permission="android.permission.MANAGE_BIOMETRIC">
             <intent-filter>
-                <action android:name="com.crdroid.faceunlock.BIND" />
+                <action android:name="com.fluentproject.faceunlock.BIND" />
             </intent-filter>
         </service>
     </application>
